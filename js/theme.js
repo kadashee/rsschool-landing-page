@@ -6,10 +6,12 @@ const savedTheme = localStorage.getItem('theme') || 'light';
 
 function updateIcons(theme) {
   if (theme === 'dark') {
-    themeIcon.src = './assets/icons/light.svg';
+    themeIcon.src = './assets/icons/sun-light.svg';
+    themeIcon.alt = 'Включить светлую тему';
     burgerIcon.src = './assets/icons/burger-light.svg';
   } else {
-    themeIcon.src = './assets/icons/dark.svg';
+    themeIcon.src = './assets/icons/moon-dark.svg';
+    themeIcon.alt = 'Включить тёмную тему';
     burgerIcon.src = './assets/icons/burger-dark.svg';
   }
 }

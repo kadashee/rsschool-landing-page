@@ -1,16 +1,20 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Наши подопечные: кошки и собаки приюта «Сказка», которые ищут дом.">
     <title>Наши подопечные</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./assets/icons/favicon.png" type="image/svg+xml">
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png">
 </head>
 
 <body>
 <header>
-    <a class="logo" href="index.html">Сказка</a>
+    <a class="logo" href="index.html">
+        <img src="./assets/header-logo.jpg" alt="" width="40" height="40">
+        <span>Сказка</span>
+    </a>
     <nav>
         <ul class="nav-list">
             <li><a href="index.html#about">О нас</a></li>
@@ -21,7 +25,7 @@
     </nav>
     <div class="header-controls">
         <button class="theme-toggle" type="button">
-            <img src="./assets/icons/dark.svg" alt="Переключить тему">
+            <img src="./assets/icons/moon-dark.svg" alt="Включить тёмную тему">
         </button>
 
         <button class="burger" type="button">
@@ -31,21 +35,23 @@
 </header>
 
 <main>
-    <section class="hero">
+    <section class="hero hero-compact">
         <h1>Наши подопечные</h1>
     </section>
     <section id="pets-list">
+        <h2>Кто ждёт дом</h2>
+
         <div class="categories">
-            <button class="category-button active" type="button">Все</button>
-            <button class="category-button" type="button">Собаки</button>
-            <button class="category-button" type="button">Кошки</button>
+            <button class="category-button active" type="button" aria-pressed="true">Все</button>
+            <button class="category-button" type="button" aria-pressed="false">Собаки</button>
+            <button class="category-button" type="button" aria-pressed="false">Кошки</button>
         </div>
 
         <div class="pets-grid">
             <article class="pet-card">
                 <img src="./assets/dogs/dog-1.jpg" alt="Собака Коко">
                 <div class="pet-card-content">
-                    <h2>Коко</h2>
+                    <h3>Коко</h3>
                     <p>Ласковая и активная собака, которая ищет дом.</p>
                     <span>Собака · 4 года</span>
                 </div>
@@ -54,7 +60,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-2.jpg" alt="Собака Чарли">
                 <div class="pet-card-content">
-                    <h2>Чарли</h2>
+                    <h3>Чарли</h3>
                     <p>Добрый и общительный пёс, любит людей и прогулки.</p>
                     <span>Собака · 3 года</span>
                 </div>
@@ -63,7 +69,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-3.jpg" alt="Собака Луна">
                 <div class="pet-card-content">
-                    <h2>Луна</h2>
+                    <h3>Луна</h3>
                     <p>Спокойная собака, которой нужен заботливый хозяин.</p>
                     <span>Собака · 5 лет</span>
                 </div>
@@ -72,7 +78,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-4.jpg" alt="Собака Ричи">
                 <div class="pet-card-content">
-                    <h2>Ричи</h2>
+                    <h3>Ричи</h3>
                     <p>Энергичный и дружелюбный пёс, готовый к новой семье.</p>
                     <span>Собака · 2 года</span>
                 </div>
@@ -81,7 +87,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-5.jpg" alt="Собака Боня">
                 <div class="pet-card-content">
-                    <h2>Боня</h2>
+                    <h3>Боня</h3>
                     <p>Нежная и доверчивая собака с мягким характером.</p>
                     <span>Собака · 6 лет</span>
                 </div>
@@ -90,7 +96,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-6.jpg" alt="Собака Марс">
                 <div class="pet-card-content">
-                    <h2>Марс</h2>
+                    <h3>Марс</h3>
                     <p>Любознательный пёс, которому очень нужен свой человек.</p>
                     <span>Собака · 3 года</span>
                 </div>
@@ -99,7 +105,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-7.jpg" alt="Собака Рэй">
                 <div class="pet-card-content">
-                    <h2>Рэй</h2>
+                    <h3>Рэй</h3>
                     <p>Верный и спокойный пёс, хорошо ладит с людьми.</p>
                     <span>Собака · 7 лет</span>
                 </div>
@@ -108,7 +114,7 @@
             <article class="pet-card">
                 <img src="./assets/dogs/dog-8.jpg" alt="Собака Альма">
                 <div class="pet-card-content">
-                    <h2>Альма</h2>
+                    <h3>Альма</h3>
                     <p>Добрая собака, которая мечтает о доме и семье.</p>
                     <span>Собака · 4 года</span>
                 </div>
@@ -117,7 +123,7 @@
             <article class="pet-card">
                 <img src="./assets/cats/cat-1.jpg" alt="Кошка Соня">
                 <div class="pet-card-content">
-                    <h2>Соня</h2>
+                    <h3>Соня</h3>
                     <p>Ласковая кошка, которая любит спокойствие и внимание.</p>
                     <span>Кошка · 2 года</span>
                 </div>
@@ -126,7 +132,7 @@
             <article class="pet-card">
                 <img src="./assets/cats/cat-2.jpg" alt="Кот Бенедикт">
                 <div class="pet-card-content">
-                    <h2>Бенедикт</h2>
+                    <h3>Бенедикт</h3>
                     <p>Общительный кот, готовый познакомиться с новой семьёй.</p>
                     <span>Кот · 3 года</span>
                 </div>
@@ -141,18 +147,23 @@
     <div class="footer-info">
         <a class="footer-logo" href="index.html">Сказка</a>
         <p>Приют для животных. Помогаем найти дом тем, кто в нём нуждается.</p>
+        <p class="footer-note">Мы открыты каждый день с 10:00 до 19:00. Приезжайте знакомиться
+            с подопечными — предварительная запись не нужна.</p>
     </div>
 
     <div class="footer-contacts">
         <h2>Контакты</h2>
         <a href="tel:+79999999999">+7 (999) 999-99-99</a>
         <a href="mailto:shelter@example.com">shelter@example.com</a>
+        <a href="https://maps.app.goo.gl/qy36wA5e27vH6T7N8" target="_blank" rel="noopener">
+            Минск, улица Кошкина, 12
+        </a>
     </div>
 
     <div class="footer-links">
         <h2>Мы в сети</h2>
-        <a href="https://github.com/kadashee" target="_blank">GitHub</a>
-        <a href="https://rs.school/" target="_blank">RS School</a>
+        <a href="https://github.com/kadashee" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://rs.school/" target="_blank" rel="noopener">RS School</a>
     </div>
 
     <p class="footer-copyright">© 2026 Сказка</p>
