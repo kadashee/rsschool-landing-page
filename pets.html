@@ -9,14 +9,24 @@
 
 <body>
 <header>
+    <a class="logo" href="index.html">Сказка</a>
     <nav>
-        <ul>
-            <li><a href="index.html#about">О нас</a></li>
+        <ul class="nav-list">
+            <li><a href="#about">О нас</a></li>
             <li><a href="pets.html">Наши подопечные</a></li>
-            <li><a href="index.html#help">Как вы можете помочь?</a></li>
+            <li><a href="#help">Как вы можете помочь?</a></li>
             <li><a href="#contact">Наши контакты</a></li>
         </ul>
     </nav>
+    <div class="header-controls">
+        <button class="theme-toggle" type="button">
+            <img src="./assets/icons/dark.svg" alt="theme toggle">
+        </button>
+
+        <button class="burger" type="button">
+            <img src="./assets/icons/burger.svg" alt="burger control">
+        </button>
+    </div>
 </header>
 
 <main>
@@ -27,7 +37,25 @@
     </section>
 </main>
 
-<footer id="contact">
+<footer id="contact" class="footer">
+    <div class="footer-info">
+        <a class="footer-logo" href="index.html">Сказка</a>
+        <p>Приют для животных. Помогаем найти дом тем, кто в нём нуждается.</p>
+    </div>
+
+    <div class="footer-contacts">
+        <h2>Контакты</h2>
+        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+        <a href="mailto:shelter@example.com">shelter@example.com</a>
+    </div>
+
+    <div class="footer-links">
+        <h2>Мы в сети</h2>
+        <a href="https://github.com/kadashee" target="_blank">GitHub</a>
+        <a href="https://rs.school/" target="_blank">RS School</a>
+    </div>
+
+    <p class="footer-copyright">© 2026 Сказка</p>
 </footer>
 
 </body>
