@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приют для животных "Сказка"</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/svg+xml">
 </head>
 
 <body>
@@ -20,28 +21,80 @@
     </nav>
     <div class="header-controls">
         <button class="theme-toggle" type="button">
-            <img src="./assets/icons/dark.svg" alt="theme toggle">
+            <img src="./assets/icons/dark.svg" alt="Переключить тему">
         </button>
 
         <button class="burger" type="button">
-            <img src="./assets/icons/burger.svg" alt="burger control">
+            <img src="./assets/icons/burger-dark.svg" alt="Меню">
         </button>
     </div>
 </header>
 
 <main>
     <section class="hero">
-        <h1>Каждому нужен дом</h1>
+        <div class="hero-content">
+            <h1>Каждому нужен дом</h1>
+            <p>
+                Мы помогаем животным найти заботливых хозяев
+                и обрести настоящий дом.
+            </p>
+            <a class="primary-button" href="pets.html">Найти друга</a>
+        </div>
     </section>
     <section id="about">
         <h2>О нас</h2>
+        <p class="section-text">
+            «Сказка» - приют для животных, оказавшихся без дома.
+            Мы заботимся о наших подопечных и помогаем им найти новую семью.
+        </p>
     </section>
     <section id="pets-preview">
-        <h2>Наши подопечные</h2>
-        <a href="pets.html">Посмотреть больше</a>
+        <div class="section-heading">
+            <h2>Наши подопечные</h2>
+            <a href="pets.html">Посмотреть всех</a>
+        </div>
+
+        <div class="slider">
+            <article class="preview-card">
+                <img src="./assets/dogs/dog-1.jpg" alt="Собака Коко">
+                <h3>Коко</h3>
+            </article>
+
+            <article class="preview-card">
+                <img src="./assets/dogs/dog-2.jpg" alt="Собака Чарли">
+                <h3>Чарли</h3>
+            </article>
+
+            <article class="preview-card">
+                <img src="./assets/cats/cat-1.jpg" alt="Кошка Соня">
+                <h3>Соня</h3>
+            </article>
+        </div>
+
+        <div class="slider-controls">
+            <button type="button">←</button>
+            <button type="button">→</button>
+        </div>
     </section>
     <section id="help">
-    <h2>Как вы можете помочь?</h2>
+        <h2>Как вы можете помочь?</h2>
+
+        <div class="help-list">
+            <article>
+                <h3>Стать волонтёром</h3>
+                <p>Помогайте с прогулками и уходом за животными.</p>
+            </article>
+
+            <article>
+                <h3>Помочь приюту</h3>
+                <p>Приюту всегда нужны корм, лекарства и другие необходимые вещи.</p>
+            </article>
+
+            <article>
+                <h3>Подарить дом</h3>
+                <p>Познакомьтесь с нашими подопечными и найдите нового друга.</p>
+            </article>
+        </div>
     </section>
 </main>
 
@@ -65,6 +118,6 @@
 
     <p class="footer-copyright">© 2026 Сказка</p>
 </footer>
-
+<script src="./js/theme.js"></script>
 </body>
 </html>

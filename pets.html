@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Наши подопечные</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/svg+xml">
 </head>
 
 <body>
@@ -12,19 +13,19 @@
     <a class="logo" href="index.html">Сказка</a>
     <nav>
         <ul class="nav-list">
-            <li><a href="#about">О нас</a></li>
+            <li><a href="index.html#about">О нас</a></li>
             <li><a href="pets.html">Наши подопечные</a></li>
-            <li><a href="#help">Как вы можете помочь?</a></li>
+            <li><a href="index.html#help">Как вы можете помочь?</a></li>
             <li><a href="#contact">Наши контакты</a></li>
         </ul>
     </nav>
     <div class="header-controls">
         <button class="theme-toggle" type="button">
-            <img src="./assets/icons/dark.svg" alt="theme toggle">
+            <img src="./assets/icons/dark.svg" alt="Переключить тему">
         </button>
 
         <button class="burger" type="button">
-            <img src="./assets/icons/burger.svg" alt="burger control">
+            <img src="./assets/icons/burger-dark.svg" alt="Меню">
         </button>
     </div>
 </header>
@@ -35,9 +36,9 @@
     </section>
     <section id="pets-list">
         <div class="categories">
-            <button class="category-button active" type="button">Собаки</button>
+            <button class="category-button active" type="button">Все</button>
+            <button class="category-button" type="button">Собаки</button>
             <button class="category-button" type="button">Кошки</button>
-            <button class="category-button" type="button">Другие</button>
         </div>
 
         <div class="pets-grid">
@@ -156,6 +157,6 @@
 
     <p class="footer-copyright">© 2026 Сказка</p>
 </footer>
-
+<script src="./js/theme.js"></script>
 </body>
 </html>
