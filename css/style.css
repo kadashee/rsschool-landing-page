@@ -313,6 +313,10 @@ h2 {
     margin: 30px auto 0;
 }
 
+.show-more[hidden] {
+    display: none;
+}
+
 .modal-overlay {
     position: fixed;
     inset: 0;
