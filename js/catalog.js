@@ -1,7 +1,7 @@
 import { pets, donationOptions } from './pets-data.js';
 
 const petsGrid = document.querySelector('.pets-grid');
-const categoryButtons = document.querySelectorAll('.category-button');
+const categoryButtons = document.querySelectorAll('#pets-list .category-button');
 const showMoreButton = document.querySelector('.show-more');
 const modalOverlay = document.querySelector('.modal-overlay');
 const modalContent = document.querySelector('.modal-content');
