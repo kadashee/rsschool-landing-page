@@ -7,16 +7,7 @@ export const pets = [
     age: '4 года',
     description: 'Ласковая и активная собака, которая ищет дом.',
     image: './assets/dogs/dog-1.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здорова',
-    },
-    compatibility: {
-      dogs: 'Подходит',
-      cats: 'Нужно знакомство',
-      children: 'Подходит для семьи с детьми старше 7 лет',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 2,
@@ -26,16 +17,7 @@ export const pets = [
     age: '3 года',
     description: 'Добрый и общительный пёс, любит людей и прогулки.',
     image: './assets/dogs/dog-2.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здоров',
-    },
-    compatibility: {
-      dogs: 'Хорошо ладит с собаками',
-      cats: 'Нужно знакомство',
-      children: 'Подходит для семьи с детьми',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 3,
@@ -45,16 +27,7 @@ export const pets = [
     age: '5 лет',
     description: 'Спокойная собака, которой нужен заботливый хозяин.',
     image: './assets/dogs/dog-3.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здорова',
-    },
-    compatibility: {
-      dogs: 'Подходит',
-      cats: 'Подходит',
-      children: 'Лучше для семьи с детьми старше 10 лет',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 4,
@@ -64,16 +37,7 @@ export const pets = [
     age: '2 года',
     description: 'Энергичный и дружелюбный пёс, готовый к новой семье.',
     image: './assets/dogs/dog-4.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здоров',
-    },
-    compatibility: {
-      dogs: 'Хорошо ладит с собаками',
-      cats: 'Нужно знакомство',
-      children: 'Подходит для активной семьи с детьми старше 7 лет',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 5,
@@ -83,16 +47,7 @@ export const pets = [
     age: '6 лет',
     description: 'Нежная и доверчивая собака с мягким характером.',
     image: './assets/dogs/dog-5.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здорова',
-    },
-    compatibility: {
-      dogs: 'Подходит',
-      cats: 'Подходит',
-      children: 'Подходит для спокойной семьи с детьми',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 6,
@@ -102,16 +57,7 @@ export const pets = [
     age: '3 года',
     description: 'Любознательный пёс, которому очень нужен свой человек.',
     image: './assets/dogs/dog-6.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здоров',
-    },
-    compatibility: {
-      dogs: 'Нужно знакомство',
-      cats: 'Лучше без кошек',
-      children: 'Подходит для семьи с детьми старше 12 лет',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 7,
@@ -121,16 +67,7 @@ export const pets = [
     age: '7 лет',
     description: 'Верный и спокойный пёс, хорошо ладит с людьми.',
     image: './assets/dogs/dog-7.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здоров, требуется возрастной контроль здоровья',
-    },
-    compatibility: {
-      dogs: 'Подходит',
-      cats: 'Подходит',
-      children: 'Подходит для спокойной семьи с детьми старше 7 лет',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 8,
@@ -140,16 +77,7 @@ export const pets = [
     age: '4 года',
     description: 'Добрая собака, которая мечтает о доме и семье.',
     image: './assets/dogs/dog-8.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здорова',
-    },
-    compatibility: {
-      dogs: 'Подходит',
-      cats: 'Нужно знакомство',
-      children: 'Подходит для семьи с детьми',
-    },
+    donationAmounts: [300, 1000, 3000],
   },
   {
     id: 9,
@@ -159,16 +87,7 @@ export const pets = [
     age: '2 года',
     description: 'Ласковая кошка, которая любит спокойствие и внимание.',
     image: './assets/cats/cat-1.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здорова',
-    },
-    compatibility: {
-      dogs: 'Нужно знакомство',
-      cats: 'Подходит',
-      children: 'Подходит для спокойной семьи с детьми старше 7 лет',
-    },
+    donationAmounts: [300, 1000],
   },
   {
     id: 10,
@@ -178,15 +97,12 @@ export const pets = [
     age: '3 года',
     description: 'Общительный кот, готовый познакомиться с новой семьёй.',
     image: './assets/cats/cat-2.jpg',
-    health: {
-      vaccinated: true,
-      sterilized: true,
-      status: 'Здоров',
-    },
-    compatibility: {
-      dogs: 'Нужно знакомство',
-      cats: 'Хорошо ладит с кошками',
-      children: 'Подходит для семьи с детьми',
-    },
+    donationAmounts: [300, 1000],
   },
 ];
+
+export const donationOptions = {
+  300: 'пакет корма',
+  1000: 'плановая прививка',
+  3000: 'ветеринарное обследование',
+};
