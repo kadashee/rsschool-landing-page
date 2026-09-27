@@ -42,106 +42,67 @@
         <h2>Кто ждёт дом</h2>
 
         <div class="categories">
-            <button class="category-button active" type="button" aria-pressed="true">Все</button>
-            <button class="category-button" type="button" aria-pressed="false">Собаки</button>
-            <button class="category-button" type="button" aria-pressed="false">Кошки</button>
-            <button class="category-button" type="button" aria-pressed="false">Другие</button>
+            <button
+                    class="category-button active"
+                    type="button"
+                    data-category="all"
+                    aria-pressed="true"
+            >
+                Все
+            </button>
+
+            <button
+                    class="category-button"
+                    type="button"
+                    data-category="dogs"
+                    aria-pressed="false"
+            >
+                Собаки
+            </button>
+
+            <button
+                    class="category-button"
+                    type="button"
+                    data-category="cats"
+                    aria-pressed="false"
+            >
+                Кошки
+            </button>
+
+            <button
+                    class="category-button"
+                    type="button"
+                    data-category="other"
+                    aria-pressed="false"
+            >
+                Другие
+            </button>
         </div>
 
-        <div class="pets-grid">
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-1.jpg" alt="Собака Коко">
-                <div class="pet-card-content">
-                    <h3>Коко</h3>
-                    <p>Ласковая и активная собака, которая ищет дом.</p>
-                    <span>Собака · 4 года</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-2.jpg" alt="Собака Чарли">
-                <div class="pet-card-content">
-                    <h3>Чарли</h3>
-                    <p>Добрый и общительный пёс, любит людей и прогулки.</p>
-                    <span>Собака · 3 года</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-3.jpg" alt="Собака Луна">
-                <div class="pet-card-content">
-                    <h3>Луна</h3>
-                    <p>Спокойная собака, которой нужен заботливый хозяин.</p>
-                    <span>Собака · 5 лет</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-4.jpg" alt="Собака Ричи">
-                <div class="pet-card-content">
-                    <h3>Ричи</h3>
-                    <p>Энергичный и дружелюбный пёс, готовый к новой семье.</p>
-                    <span>Собака · 2 года</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-5.jpg" alt="Собака Боня">
-                <div class="pet-card-content">
-                    <h3>Боня</h3>
-                    <p>Нежная и доверчивая собака с мягким характером.</p>
-                    <span>Собака · 6 лет</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-6.jpg" alt="Собака Марс">
-                <div class="pet-card-content">
-                    <h3>Марс</h3>
-                    <p>Любознательный пёс, которому очень нужен свой человек.</p>
-                    <span>Собака · 3 года</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-7.jpg" alt="Собака Рэй">
-                <div class="pet-card-content">
-                    <h3>Рэй</h3>
-                    <p>Верный и спокойный пёс, хорошо ладит с людьми.</p>
-                    <span>Собака · 7 лет</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/dogs/dog-8.jpg" alt="Собака Альма">
-                <div class="pet-card-content">
-                    <h3>Альма</h3>
-                    <p>Добрая собака, которая мечтает о доме и семье.</p>
-                    <span>Собака · 4 года</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/cats/cat-1.jpg" alt="Кошка Соня">
-                <div class="pet-card-content">
-                    <h3>Соня</h3>
-                    <p>Ласковая кошка, которая любит спокойствие и внимание.</p>
-                    <span>Кошка · 2 года</span>
-                </div>
-            </article>
-
-            <article class="pet-card">
-                <img src="./assets/cats/cat-2.jpg" alt="Кот Бенедикт">
-                <div class="pet-card-content">
-                    <h3>Бенедикт</h3>
-                    <p>Общительный кот, готовый познакомиться с новой семьёй.</p>
-                    <span>Кот · 3 года</span>
-                </div>
-            </article>
-        </div>
+        <div class="pets-grid"></div>
 
         <button class="show-more" type="button">Показать ещё</button>
     </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" type="button">✕</button>
+            <div class="modal-content"></div>
+
+            <h3>Чем помочь?</h3>
+
+            <h4>Сумма</h4>
+            <div class="categories modal-amounts"></div>
+
+            <h4>Частота</h4>
+            <div class="categories">
+                <button class="category-button" type="button" data-frequency="Разовая">Разово</button>
+                <button class="category-button" type="button" data-frequency="Ежемесячная">Ежемесячно</button>
+            </div>
+
+            <p class="donation-result"></p>
+        </div>
+    </div>
 </main>
 
 <footer id="contact" class="footer">
@@ -170,5 +131,7 @@
     <p class="footer-copyright">© 2026 Сказка</p>
 </footer>
 <script src="./js/theme.js"></script>
+<script src="./js/burger.js"></script>
+<script type="module" src="./js/catalog.js"></script>
 </body>
 </html>
