@@ -7,7 +7,7 @@ export const pets = [
     age: '4 года',
     description: 'Ласковая и активная собака, которая ищет дом.',
     image: './assets/dogs/dog-1.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const pets = [
     age: '3 года',
     description: 'Добрый и общительный пёс, любит людей и прогулки.',
     image: './assets/dogs/dog-2.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const pets = [
     age: '5 лет',
     description: 'Спокойная собака, которой нужен заботливый хозяин.',
     image: './assets/dogs/dog-3.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const pets = [
     age: '2 года',
     description: 'Энергичный и дружелюбный пёс, готовый к новой семье.',
     image: './assets/dogs/dog-4.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const pets = [
     age: '6 лет',
     description: 'Нежная и доверчивая собака с мягким характером.',
     image: './assets/dogs/dog-5.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const pets = [
     age: '3 года',
     description: 'Любознательный пёс, которому очень нужен свой человек.',
     image: './assets/dogs/dog-6.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const pets = [
     age: '7 лет',
     description: 'Верный и спокойный пёс, хорошо ладит с людьми.',
     image: './assets/dogs/dog-7.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const pets = [
     age: '4 года',
     description: 'Добрая собака, которая мечтает о доме и семье.',
     image: './assets/dogs/dog-8.jpg',
-    donationAmounts: [300, 1000, 3000],
+    donationAmounts: [3000, 7000, 13000],
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const pets = [
     age: '2 года',
     description: 'Ласковая кошка, которая любит спокойствие и внимание.',
     image: './assets/cats/cat-1.jpg',
-    donationAmounts: [300, 1000],
+    donationAmounts: [3000, 13000],
   },
   {
     id: 10,
@@ -97,12 +97,12 @@ export const pets = [
     age: '3 года',
     description: 'Общительный кот, готовый познакомиться с новой семьёй.',
     image: './assets/cats/cat-2.jpg',
-    donationAmounts: [300, 1000],
+    donationAmounts: [3000, 13000],
   },
 ];
 
 export const donationOptions = {
-  300: 'пакет корма',
-  1000: 'плановая прививка',
-  3000: 'ветеринарное обследование',
+  3000: 'корм',
+  7000: 'занятия с кинологом',
+  13000: 'передержка',
 };

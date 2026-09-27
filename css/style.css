@@ -342,6 +342,10 @@ h2 {
     background-color: var(--background-color);
 }
 
+.modal .categories {
+    justify-content: flex-start;
+}
+
 .modal img {
     width: 100%;
     aspect-ratio: 4 / 3;

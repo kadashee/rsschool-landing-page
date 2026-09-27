@@ -103,7 +103,9 @@ function updateDonation() {
     button.classList.toggle('active', isActive);
   });
 
-  donationResult.textContent = `${selectedFrequency} помощь ${selectedAmount} ₽ — это ${donationOptions[selectedAmount]}.`;
+  const period = selectedFrequency === 'Разовая' ? 'на месяц' : 'каждый месяц';
+
+  donationResult.textContent = `${selectedFrequency} помощь ${selectedAmount} ₽ — это ${donationOptions[selectedAmount]} ${period}.`;
 }
 
 function openModal(pet) {
