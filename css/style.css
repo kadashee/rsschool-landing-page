@@ -55,6 +55,10 @@ header {
     gap: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--background-color);
 }
 
 .logo,
@@ -118,6 +122,18 @@ header {
     display: none;
 }
 
+.burger img {
+    transition: transform 0.3s;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+body.menu-open .burger img {
+    transform: rotate(90deg);
+}
+
 section {
     padding: 50px 0;
 }
@@ -171,10 +187,18 @@ h2 {
 }
 
 .slider {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    overflow: hidden;
     margin-top: 20px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s;
+}
+
+.preview-card {
+    flex: 0 0 calc((100% - 40px) / 3);
 }
 
 .preview-card,
@@ -330,7 +354,28 @@ h2 {
     }
 
     nav {
-        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px 20px;
+        background-color: var(--background-color);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    body.menu-open nav {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        font-size: 24px;
     }
 
     .burger {
@@ -341,9 +386,12 @@ h2 {
         font-size: 40px;
     }
 
-    .slider,
     .help-list {
         grid-template-columns: 1fr;
+    }
+
+    .preview-card {
+        flex-basis: 100%;
     }
 
     .pets-grid {
